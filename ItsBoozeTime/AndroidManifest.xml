@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.booze.time"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="10" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="false"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name" 
+        android:configChanges="keyboardHidden|orientation"
+         >
+        <uses-library android:name="com.google.android.maps" />
+
+        <activity
+            android:name=".SplashScreen"
+            android:label="@string/app_name" >
+<!--             android:theme="@android:style/Theme.Holo.Light.NoActionBar.Fullscreen"> -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".HomeActivity"  />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".BarsList" android:label="All Bars"/>
+        <activity android:name=".ShowBarLocation" />
+        <activity android:name=".NbrListActivity" android:label="All Neighbourhood"/>
+        <activity android:name=".NbrDetailsActivity" android:label="Neighbourhood Detail"/>
+        <activity android:name=".ShowViewAll" />
+        <activity android:name=".BarDetails" android:label="Bar Details"/>
+        <activity android:name=".NbrDesc" />
+        
+        
+    </application>
+
+</manifest>

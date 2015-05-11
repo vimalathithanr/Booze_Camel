@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/balloon_main_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/balloon_overlay_bg_selector"
+    android:minWidth="200dip"
+    android:orientation="horizontal"
+    android:paddingBottom="35dip"
+    android:paddingLeft="10dip"
+    android:paddingRight="0dip"
+    android:paddingTop="0dip" >
+
+    <LinearLayout
+        android:id="@+id/balloon_inner_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingTop="10dip" >
+
+        <TextView
+            android:id="@+id/barNameM"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingLeft="5dp"
+            android:text="balloon_item_title"
+            android:textSize="14dip" 
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/barAddressM"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:text="balloon_item_snippet"
+            android:textSize="12dip" 
+            android:textColor="#000000"/>
+        
+        <ImageView
+        android:id="@+id/close_img_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dip"
+        android:paddingLeft="10dip"
+        android:paddingRight="12dip"
+        android:paddingTop="12dip"
+        android:src="@drawable/balloon_overlay_close" 
+        android:layout_gravity="top|right"  />
+    </LinearLayout>
+
+</LinearLayout>
